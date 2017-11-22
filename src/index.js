@@ -10,5 +10,5 @@ const server = app.listen(PORT || 3000, () => {
 });
 
 app.get('*', (req, res) => {
-  res.send(200, 'hello');
+  res.status(200).send('Hello World')
 });
